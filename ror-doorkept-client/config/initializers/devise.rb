@@ -273,7 +273,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
-  config.omniauth :doorkept, 'bbwaNzI6LfOA3G_gkrQ17vBe6ubHZUtHGsV7TsjPq28', 'taQhzZMi3CHoR8_GrpboAexDtrzyrgifpG14suWKUJc'
+  config.omniauth :doorkept, 'bbwaNzI6LfOA3G_gkrQ17vBe6ubHZUtHGsV7TsjPq28', 'taQhzZMi3CHoR8_GrpboAexDtrzyrgifpG14suWKUJc', scope: 'read'
 
   env_creds = Rails.application.credentials[Rails.env.to_sym] || {}
   %i{ facebook twitter github }.each do |provider|
